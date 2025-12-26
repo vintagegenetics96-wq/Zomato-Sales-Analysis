@@ -31,6 +31,7 @@ Order_Amount	Total bill amount
 Delivery_Time (min)	Delivery duration
 Payment_Mode	Cash, UPI, Card
 Order_Status	Delivered / Cancelled
+
 📁 Table 2: Restaurants
 Column Name	Description
 Restaurant_ID	Unique ID
@@ -38,6 +39,7 @@ Restaurant_Name	Name
 Cuisine	Food category
 Rating	Customer rating
 City	Location
+
 📁 Table 3: Customers
 Column Name	Description
 Customer_ID	Unique ID
@@ -45,6 +47,7 @@ Customer_Name	Name
 Gender	M/F
 Age	Age
 City	City
+
 3️⃣ Data Cleaning (Power Query)
 Removed null & duplicate values
 
@@ -81,7 +84,9 @@ CALCULATE(
 
 Avg Delivery Time =
 AVERAGE(Orders[Delivery_Time])
+
 6️⃣ Dashboard Pages
+
 📌 Page 1: Sales Overview
 KPIs:
 
@@ -128,7 +133,9 @@ Order status distribution
 
 Delivery time analysis
 
+
 7️⃣ Key Insights (Sample)
+
 📈 Metro cities contribute over 60% of total sales
 
 🍕 Italian & North Indian cuisines generate highest revenue
